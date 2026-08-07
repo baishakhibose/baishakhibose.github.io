@@ -47,18 +47,38 @@ img { max-width: 100%; display: block; }
 .main-nav a:hover::after, .main-nav a:focus-visible::after { right: 0; }
 .menu-toggle { display: none; border: 0; background: transparent; font-size: 1.5rem; color: var(--green-dark); }
 
-.hero { position: relative; overflow: hidden; min-height: 620px; display: grid; align-items: center; border-bottom: 1px solid var(--border); }
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
 .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--warm-white) 0 54%, rgba(250,250,247,.4) 100%); }
 .hero-lines { position: absolute; width: 68%; height: 80%; right: -10%; bottom: -18%; opacity: .5; background: repeating-radial-gradient(ellipse at 30% 60%, transparent 0 18px, rgba(46,125,50,.10) 19px 20px, transparent 21px 36px); transform: rotate(-8deg); }
 .hero-grid { position: relative; z-index: 2; }
-.hero-copy { max-width: 760px; padding: 80px 0 90px; }
+.hero-copy {
+  max-width: 720px;
+  padding: 64px 0 72px;
+}
 .eyebrow { margin: 0 0 12px; color: var(--green); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 600; }
 .eyebrow.light { color: #cfe3d1; }
 h1, h2, h3 { font-family: var(--serif); color: var(--green-dark); line-height: 1.05; margin-top: 0; }
-h1 { font-size: clamp(3.7rem, 8vw, 6.9rem); max-width: 900px; margin-bottom: 24px; font-weight: 500; }
+h1 {
+  font-size: clamp(3.2rem, 5.2vw, 5.2rem);
+  max-width: 760px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  line-height: 1.02;
+}
 h2 { font-size: clamp(2.5rem, 4.5vw, 4rem); margin-bottom: 16px; font-weight: 600; }
 h3 { font-size: 1.75rem; margin-bottom: 10px; font-weight: 600; }
-.hero-lede { max-width: 650px; font-size: 1.22rem; margin: 0 0 32px; }
+.hero-lede {
+  max-width: 600px;
+  font-size: 1.1rem;
+  margin: 0 0 28px;
+}
 .button { display: inline-flex; align-items: center; gap: 18px; padding: 13px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
 .button.primary { background: var(--green-dark); color: white; box-shadow: 0 8px 18px rgba(31,91,40,.16); }
 .button.primary:hover { transform: translateY(-2px); background: var(--green); box-shadow: 0 12px 24px rgba(31,91,40,.2); }

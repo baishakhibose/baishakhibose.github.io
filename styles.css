@@ -353,6 +353,8 @@ h3 {
   overflow: visible;
 }
 
+/* Sustainable Materials animation */
+
 .microstructure svg path {
   stroke-dasharray: 260;
   stroke-dashoffset: 0;
@@ -379,6 +381,123 @@ h3 {
   50% {
     transform: scale(1.18);
     transform-origin: center;
+  }
+}
+
+/* Resilient Infrastructure animation */
+
+.truss-icon .truss-line {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 0;
+}
+
+.research-card:hover .truss-icon .truss-line {
+  animation: draw-truss 0.85s ease forwards;
+}
+
+@keyframes draw-truss {
+  from {
+    stroke-dashoffset: 240;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Engineering Innovation animation */
+
+.innovation-icon .bulb-outline {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 0;
+}
+
+.innovation-icon .bulb-base {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 0;
+}
+
+.innovation-icon .bulb-rays {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 0;
+}
+
+.innovation-icon .bulb-filament {
+  stroke-dasharray: 180;
+  stroke-dashoffset: 0;
+}
+
+.innovation-icon .bulb-stem {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.research-card:hover .innovation-icon .bulb-outline {
+  animation: draw-bulb-outline 0.85s ease forwards;
+}
+
+.research-card:hover .innovation-icon .bulb-base {
+  animation: draw-bulb-base 0.85s ease forwards;
+}
+
+.research-card:hover .innovation-icon .bulb-filament {
+  animation: draw-bulb-filament 0.85s ease forwards;
+}
+
+.research-card:hover .innovation-icon .bulb-stem {
+  animation: draw-bulb-stem 0.85s ease forwards;
+}
+
+.research-card:hover .innovation-icon .bulb-rays {
+  animation: pulse-bulb-rays 0.85s ease forwards;
+}
+
+@keyframes draw-bulb-outline {
+  from {
+    stroke-dashoffset: 220;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-bulb-base {
+  from {
+    stroke-dashoffset: 50;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-bulb-filament {
+  from {
+    stroke-dashoffset: 180;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-bulb-stem {
+  from {
+    stroke-dashoffset: 60;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulse-bulb-rays {
+  0% {
+    opacity: 0.2;
+    stroke-dashoffset: 80;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
   }
 }
 
@@ -556,6 +675,11 @@ h3 {
 
 .contact-placeholder p {
   margin: 0 0 18px;
+}
+
+.contact-section a {
+  color: white;
+  text-underline-offset: 3px;
 }
 
 /* =========================

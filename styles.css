@@ -249,7 +249,10 @@ h3 {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .button.primary {
@@ -307,7 +310,9 @@ h3 {
   padding: 32px 28px;
   border-radius: 8px;
   min-height: 305px;
-  transition: transform 0.25s ease, border-color 0.25s ease,
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
     box-shadow 0.25s ease;
 }
 
@@ -383,26 +388,28 @@ h3 {
 
 .people-grid {
   display: grid;
-  grid-template-columns: 0.78fr 1.22fr;
+  grid-template-columns: 0.72fr 1.28fr;
   gap: 64px;
-  align-items: center;
+  align-items: start;
 }
 
-.photo-placeholder {
-  min-height: 390px;
-  border: 1px dashed rgba(184, 115, 51, 0.55);
-  background: rgba(255, 255, 255, 0.45);
-  display: grid;
-  place-items: center;
-  align-content: center;
-  text-align: center;
+.people-photo {
+  width: 100%;
+  max-width: 430px;
+  justify-self: center;
+}
+
+.people-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 8px;
-  color: var(--slate);
+  box-shadow: var(--shadow);
 }
 
-.placeholder-person {
-  font-size: 4.5rem;
-  line-height: 1;
+.people-copy {
+  padding-top: 4px;
 }
 
 .people-copy .role {
@@ -414,7 +421,8 @@ h3 {
 }
 
 .bio-placeholder {
-  max-width: 700px;
+  max-width: 760px;
+  margin-bottom: 0;
 }
 
 .profile-links {
@@ -429,6 +437,31 @@ h3 {
   border-bottom: 1px solid var(--green);
   padding: 5px 0;
   margin-right: 18px;
+  font-weight: 600;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.credentials-block h3 {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+
+.credentials-block p {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.credentials-block strong {
+  color: var(--charcoal);
   font-weight: 600;
 }
 
@@ -671,6 +704,15 @@ h3 {
     min-height: auto;
   }
 
+  .people-photo {
+    max-width: 360px;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
   .contact-placeholder {
     border-left: 0;
     padding-left: 0;
@@ -736,7 +778,12 @@ h3 {
     min-height: auto;
   }
 
-  .photo-placeholder {
-    min-height: 330px;
+  .people-photo {
+    max-width: 100%;
+  }
+
+  .credentials-grid {
+    margin-top: 30px;
+    padding-top: 24px;
   }
 }

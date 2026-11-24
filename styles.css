@@ -1,6 +1,8 @@
+
 :root {
-  --green: #2E7D32;
-  --green-dark: #1f5b28;
+  --green: #36594B;
+  --green-dark: #203C32;
+  --green-footer: #152C26;
   --charcoal: #263238;
   --slate: #607D8B;
   --warm-white: #FAFAF7;
@@ -11,6 +13,7 @@
   --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --sans: "Source Sans 3", "Segoe UI", Arial, sans-serif;
 }
+
 
 * {
   box-sizing: border-box;
@@ -176,7 +179,7 @@ img {
   background: repeating-radial-gradient(
     ellipse at 30% 60%,
     transparent 0 18px,
-    rgba(46, 125, 50, 0.1) 19px 20px,
+    rgba(54, 89, 75, 0.1) 19px 20px,
     transparent 21px 36px
   );
   transform: rotate(-8deg);
@@ -202,7 +205,7 @@ img {
 }
 
 .eyebrow.light {
-  color: #cfe3d1;
+  color: 	#D8E7DD;
 }
 
 h1,
@@ -258,13 +261,13 @@ h3 {
 .button.primary {
   background: var(--green-dark);
   color: white;
-  box-shadow: 0 8px 18px rgba(31, 91, 40, 0.16);
+  box-shadow: 0 8px 18px rgba(32, 60, 50, 0.16);
 }
 
 .button.primary:hover {
   transform: translateY(-2px);
   background: var(--green);
-  box-shadow: 0 12px 24px rgba(31, 91, 40, 0.2);
+  box-shadow: 0 12px 24px rgba(32, 60, 50, 0.2);
 }
 
 /* =========================
@@ -318,7 +321,7 @@ h3 {
 
 .research-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(46, 125, 50, 0.45);
+  border-color: rgba(54, 89, 75, 0.45);
   box-shadow: var(--shadow);
 }
 
@@ -338,7 +341,7 @@ h3 {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #edf4eb;
+  background: #E7EEEA;
   margin-bottom: 22px;
 }
 
@@ -737,11 +740,13 @@ h3 {
    FOOTER
    ========================= */
 
+
 .site-footer {
-  background: #173f20;
+  background: var(--green-footer);
   color: rgba(255, 255, 255, 0.82);
   padding: 28px 0;
 }
+
 
 .footer-grid {
   display: flex;

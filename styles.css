@@ -967,3 +967,37 @@ h3 {
     padding-top: 24px;
   }
 }
+
+
+/* Scrollable News and Publications */
+
+.scroll-list.is-scrollable {
+  max-height: var(--visible-three-height);
+  overflow-y: auto;
+  padding-right: 14px;
+  overscroll-behavior-y: contain;
+
+  /* Forest Ink scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--green) #E7EEEA;
+}
+
+.scroll-list.is-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-list.is-scrollable::-webkit-scrollbar-track {
+  background: #E7EEEA;
+  border-radius: 8px;
+}
+
+.scroll-list.is-scrollable::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 8px;
+}
+
+.scroll-list.is-scrollable:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
